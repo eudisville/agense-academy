@@ -1,0 +1,41 @@
+.card-client {
+  position: relative;
+  background: #ffffff;
+  width: 350px;
+  padding: 50px 20px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-wrapper {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.description-card {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.role-card {
+  font-size: 14px;
+  color: gray;
+}
