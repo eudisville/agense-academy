@@ -1,0 +1,17 @@
+
+.team-cards {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .teams {
+        height: auto;
+    }
+    .team-cards {
+        gap: 20px;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,29 @@
+.member-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: grayscale();
+    cursor: pointer;
+}
+
+.member-image img:hover {
+    filter: grayscale(0);
+    transition: filter 0.3s ease;
+}
+
+.member-infos h2{
+    font-size: 16px;
+}
+
+.member-infos p{
+    font-size: 15px;
+    color: gray;
+}

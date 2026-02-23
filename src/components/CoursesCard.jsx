@@ -1,19 +1,30 @@
-import React from 'react'
-import './styles/coursescard.css';
+import React from "react";
+import './styles/coursescard.css'
 
-function CoursesCard({ image, title, description }) {
+const Card = ({ backgroundImage, title, content, button, backgroundColor }) => {
   return (
-    <div className="courses-card">
-        <div className="card-image">
-            <img src={image} alt={title} />
-        </div>
-        <div className="card-infos">
-            <h3>{title}</h3>
-            <p>{description}</p>
+    <div className="card">
+      <div
+        className="card-background"
+        style={{
+          backgroundImage: backgroundImage
+            ? `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(${backgroundImage})`
+            : undefined,
+          backgroundColor: backgroundColor || 'black',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
+      <div className="card-content">
+        <div className="card-text">
+            <h2>{title}</h2>
+            <p>{content}</p>
             <button>En savoir plus</button>
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default CoursesCard
+export default Card;

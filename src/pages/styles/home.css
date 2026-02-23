@@ -188,3 +188,112 @@ section {
     flex-wrap: wrap;
     margin-top: 40px;
 }
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 86vh;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 40px;
+        height: auto;
+    }
+
+    .about .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about .text h1 {
+        font-size: 36px;
+    }
+
+    .about .text p {
+        font-size: 16px;
+    }
+
+    .about .image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .formations {
+        padding: 40px;
+
+    }
+
+    .formation-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .formation-text h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .formation-text p {
+        font-size: 16px;
+    }
+
+    .founder {
+        flex-direction: column;
+        padding: 40px;
+        height: auto;
+        text-align: center;
+    }
+
+    .founder-image {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-container {
+        width: 50%;
+    }
+
+    .founder-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .founder-text h4 {
+        font-size: 72px;
+    }
+
+    .founder-text h5 {
+        font-size: 18px;
+    }
+
+    .role h3 {
+        font-size: 18px;
+    }
+
+    .role h6 {
+        font-size: 14px;
+    }
+
+    .temoignages {
+        height: auto;
+        padding: 40px;
+    }
+
+    .temoignages .title {
+        margin-bottom: 40px;
+    }
+
+    .temoignages .title h1 {
+        font-size: 36px;
+    }
+
+    .temoignages .title p {
+        font-size: 16px;
+    }
+
+    .clients {
+        gap: 60px;
+    }
+}
