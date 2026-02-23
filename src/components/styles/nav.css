@@ -101,6 +101,7 @@ nav h4:hover {
     }
 
     .links {
+        height: 86vh;
         display: none;
         flex-direction: column;
         gap: 0;

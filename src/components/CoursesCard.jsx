@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import './styles/coursescard.css'
 
-const Card = ({ backgroundImage, title, content, button, backgroundColor }) => {
+const Card = ({ backgroundImage, title, content, backgroundColor, courseId }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="card">
       <div
@@ -18,9 +21,11 @@ const Card = ({ backgroundImage, title, content, button, backgroundColor }) => {
       ></div>
       <div className="card-content">
         <div className="card-text">
-            <h2>{title}</h2>
-            <p>{content}</p>
-            <button>En savoir plus</button>
+          <h2>{title}</h2>
+          <p>{content}</p>
+          <button onClick={() => navigate(`/courses/${courseId}`)}>
+            En savoir plus
+          </button>
         </div>
       </div>
     </div>

@@ -1,0 +1,252 @@
+/* ===== PAGE ===== */
+.cd-page {
+  background: #fff;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+}
+
+.cd-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 32px 60px;
+}
+
+/* ===== HERO ===== */
+.cd-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.cd-hero-left {
+  flex: 1;
+}
+
+/* Titre */
+.cd-title {
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: #111;
+  margin: 0 0 4px;
+  line-height: 1.2;
+}
+
+/* Domaine */
+.cd-domain {
+  font-size: 0.8rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+}
+
+/* Infos durée / modalité */
+.cd-info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.cd-info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #333;
+}
+
+.cd-info-icon {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cd-info-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #111;
+}
+
+.cd-info-value {
+  color: #444;
+}
+
+.cd-separator {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Places */
+.cd-places {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 8px 0 20px;
+}
+
+/* Tarif */
+.cd-tarif-block {
+  margin-bottom: 20px;
+}
+
+.cd-tarif-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #111;
+  margin: 0 0 4px;
+}
+
+.cd-tarif-price {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #c0392b;
+  margin: 0;
+}
+
+/* Bouton S'inscrire */
+.cd-inscrit-btn {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.cd-inscrit-btn:hover {
+  background: #a93226;
+}
+
+/* ===== IMAGE DROITE ===== */
+.cd-hero-right {
+  flex-shrink: 0;
+  width: 260px;
+}
+
+.cd-hero-image {
+  width: 100%;
+  height: 180px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cd-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Placeholder paysage si pas d'image */
+.cd-hero-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cd-placeholder-sky {
+  flex: 1;
+  background: linear-gradient(180deg, #87ceeb 0%, #b0dff0 100%);
+}
+
+.cd-placeholder-ground {
+  height: 45%;
+  background: linear-gradient(180deg, #5aad4a 0%, #3d8b35 100%);
+  border-radius: 60% 60% 0 0 / 30% 30% 0 0;
+}
+
+/* ===== DIVIDER ===== */
+.cd-divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 36px 0;
+}
+
+/* ===== DETAILS ===== */
+.cd-details {
+  max-width: 680px;
+}
+
+.cd-details-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #c0392b;
+  margin: 0 0 14px;
+}
+
+.cd-details-text {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #333;
+  margin: 0 0 24px;
+}
+
+/* Certificat */
+.cd-certificat {
+  font-size: 0.9rem;
+  color: #c0392b;
+  font-weight: 600;
+  margin: 0 0 24px;
+  text-decoration: underline;
+  cursor: default;
+}
+
+/* Bouton brochure */
+.cd-brochure-btn {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.cd-brochure-btn:hover {
+  background: #a93226;
+}
+
+/* ===== NOT FOUND ===== */
+.cd-notfound {
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.cd-notfound button {
+  margin-top: 16px;
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 640px) {
+  .cd-hero {
+    flex-direction: column-reverse;
+  }
+
+  .cd-hero-right {
+    width: 100%;
+  }
+
+  .cd-hero-image {
+    height: 160px;
+  }
+}
