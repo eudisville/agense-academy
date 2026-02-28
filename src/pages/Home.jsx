@@ -1,9 +1,9 @@
-import React from 'react' 
+import React, { useState, useEffect } from 'react' 
 import TopBar from '../components/TopBar';
 import Nav from '../components/Nav';
 import Card from '../components/Card';
 import './styles/home.css';
-import img1 from './assets/1.png';
+import img1 from './assets/AgenSe.png';
 import Founder from './assets/founder.png';
 import ClientCard from '../components/ClientCard';
 import Footer from '../components/Footer';
@@ -12,16 +12,85 @@ import Com from './assets/com.jpg';
 import Edu from './assets/projet.jpg';
 import Entre from './assets/business.jpg';
 import Lead from './assets/leader.jpg';
+import Stud from './assets/stud.jpg';
+import Academy from './assets/BA.jpg';
 
 function Home() {
+  const slides = [
+    {
+      image: Academy,
+      title: "Bienvenue à l'Agense Academy",
+      subtitle: "Nous créons des expériences digitales puissantes",
+    },
+    {
+      image: Com,
+      title: "Innovation & Vision",
+      subtitle: "Construisons le futur ensemble",
+    },
+    {
+      image: Edu,
+      title: "Performance & Impact",
+      subtitle: "Des solutions pensées pour durer",
+    }
+  ];
+
+  const [current, setCurrent] = useState(0);
+
+  // Autoplay
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  });
+
+  const nextSlide = () => {
+    setCurrent((prev) =>
+      prev === slides.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  // const prevSlide = () => {
+  //   setCurrent((prev) =>
+  //     prev === 0 ? slides.length - 1 : prev - 1
+  //   );
+  // };
+
   return (
     <div>
       <TopBar />
       <Nav />
       
-      <header>
+      <header
+      style={{
+        backgroundImage: `url(${slides[current].image})`
+      }}
+    >
+      <div className="header-content">
+        <h1>{slides[current].title}</h1>
+        <p>{slides[current].subtitle}</p>
+      </div>
 
-      </header>
+      {/* Flèches */}
+      {/* <button className="arrow left" onClick={prevSlide}>
+        ❮
+      </button>
+      <button className="arrow right" onClick={nextSlide}>
+        ❯
+      </button> */}
+
+      {/* Dots */}
+      <div className="dots">
+        {slides.map((_, index) => (
+          <div
+            key={index}
+            className={`dot ${current === index ? "active" : ""}`}
+            onClick={() => setCurrent(index)}
+          ></div>
+        ))}
+      </div>
+    </header>
 
       <section className='about'>
         <div className="text">
@@ -84,9 +153,26 @@ function Home() {
         </div>
 
         <div className="clients">
-          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="Marie Dominique BEUGRE" role="Fondateur de l'Agense Academy" />
-          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="Marie Dominique BEUGRE" role="Fondateur de l'Agense Academy" />
-          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="Marie Dominique BEUGRE" role="Fondateur de l'Agense Academy" />
+          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="Eudes Koffi" role="Executive Manager à Beriverse Inc." />
+          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="⁠Esther B. Tegnet" role="Partenaire - Jera Consulting Services" />
+          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="⁠Steven Awuku" role="Formateur" />
+        </div>
+      </section>
+
+      <section className='box'>
+        <div className="box-image">
+          <img src={Stud} alt="" />
+        </div>
+
+        <div className="formulaire">
+          <h1><span>Hello</span>, inscrivez-vous à notre newsletter</h1>
+          <p>Recevez nos dernières actualités et nos offres exclusives directement dans votre boîte de réception.</p>
+
+          <form action="">
+            <input type="text" placeholder='Votre nom' />
+            <input type="email" placeholder='Votre adresse email' />
+            <button type='submit'>S'inscire</button>
+          </form>
         </div>
       </section>
 

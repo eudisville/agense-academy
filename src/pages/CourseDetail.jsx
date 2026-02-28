@@ -30,64 +30,81 @@ function CourseDetail() {
       <TopBar />
       <Nav />
 
-      <div className="cd-wrapper">
+      <div className="header">
+        <div className="header-text">
+          <h1>{course.title}</h1>
+          <h5>{course.badge}</h5>
 
-        {/* ── HERO SECTION ── */}
-        <div className="cd-hero">
-          <div className="cd-hero-left">
-            <h1 className="cd-title">{course.title}</h1>
-            <p className="cd-domain">{course.badge}</p>
+          <p>{course.description}</p>
 
-            <div className="cd-info-row">
-              <span className="cd-info-item">
-                <span className="cd-info-icon">⏱</span>
-                <span className="cd-info-label">DURÉE</span>
-                <span className="cd-info-value">{course.duration}</span>
-              </span>
-              <span className="cd-separator">|</span>
-              <span className="cd-info-item">
-                <span className="cd-info-icon">≡</span>
-                <span className="cd-info-value">EN LIGNE ET EN PRÉSENTIEL</span>
-              </span>
-            </div>
-
-            <p className="cd-places">25 Places disponibles/cohorte</p>
-
-            <div className="cd-tarif-block">
-              <p className="cd-tarif-label">TARIF</p>
-              <p className="cd-tarif-price">{course.price}</p>
-            </div>
-
-            <button className="cd-inscrit-btn">S'INSCRIRE</button>
+          <div className="info-row">
+            <span className="info-item">
+            <span className="info-icon">⏱ </span>
+              {/* <span className="info-label">DURÉE</span> */}
+                <span className="info-value">{course.duration}</span>
+                </span>
+                {/* <span className="separator"> | </span> */}
+              <span className="info-item">
+            {/* <span className="info-icon">≡ </span> */}
+            <span className="info-value">En Ligne & en Présentiel</span>
+            </span>
           </div>
 
-          <div className="cd-hero-right">
-            <div
-              className="cd-hero-image"
-              style={{ backgroundColor: course.backgroundColor }}
+          <p className="places">25 Places disponibles/cohorte</p>
+
+          <div className="tarif-block">
+            {/* <p>TARIF</p> */}
+            <p className="price">{course.price}</p>
+          </div>
+
+          <button className="inscrit-btn">Discuter</button>
+          <button className="brochure-btn">Télécharger la brochure</button>
+        </div>
+
+        <div className="header-text">
+          <div
+            className="hero-image"
+            style={{ backgroundImage: `url(${course.backgroundImage})` }}
             >
-              {course.backgroundImage ? (
+             {course.backgroundImage ? (
                 <img src={course.backgroundImage} alt={course.title} />
               ) : (
-                <div className="cd-hero-placeholder">
-                  <div className="cd-placeholder-sky"></div>
-                  <div className="cd-placeholder-ground"></div>
+                <div className="hero-placeholder">
+                  <div className="placeholder-sky"></div>
+                  <div className="placeholder-ground"></div>
                 </div>
               )}
-            </div>
           </div>
         </div>
+        
+      </div>
 
-        {/* ── DETAILS SECTION ── */}
-        <div className="cd-details">
-          <p className="cd-details-label">DÉTAILS DE LA FORMATION</p>
-          <p className="cd-details-text">{course.description}</p>
-
-          <p className="cd-certificat">Certificat remis à la fin</p>
-
-          <button className="cd-brochure-btn">TÉLÉCHARGER LA BROCHURE</button>
+      <section className='details'>
+        <div className="objectives">
+          <h2>Objectifs de la formation</h2>
+          <ul>
+            {course.objectives.map((obj, index) => (
+              <li key={index}>{obj}</li>
+            ))}
+          </ul>
         </div>
 
+        <div className="programme">
+          <h2>Programme de la formation</h2>
+          <ul>
+            {course.programme.map((item, index) => (
+              <li key={index}>
+                <strong>{item.semaine}:</strong> {item.contenu}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <div className="instructor">
+        {/* <h2>Formateur</h2> */}
+        <h6><strong>{course.instructor}</strong></h6>
+        <p>{course.instructorRole}</p>
       </div>
 
       <Footer />

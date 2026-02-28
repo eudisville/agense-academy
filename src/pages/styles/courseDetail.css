@@ -1,252 +1,188 @@
-/* ===== PAGE ===== */
-.cd-page {
-  background: #fff;
-  min-height: 100vh;
-  font-family: "Arial", sans-serif;
-}
-
-.cd-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 40px 32px 60px;
-}
-
-/* ===== HERO ===== */
-.cd-hero {
+.header {
+  height: 82vh;
+  width: 100%;
+  background-color: rgb(253, 253, 253);
+  color: rgb(0, 0, 0);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+
+.header-text {
+  max-width: 500px;
+}
+
+.header-text h1 {
+  font-size: 54px;
+}
+
+.header-text h5 {
+  font-size: 14px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 10px;
+}
+
+.header-text p {
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
   gap: 40px;
+  color: rgb(15, 20, 185);
 }
 
-.cd-hero-left {
-  flex: 1;
+.places {
+  font-size: 14px;
+  margin: 20px 0;
 }
 
-/* Titre */
-.cd-title {
-  font-family: "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 48px;
-  color: #111;
-  margin: 0 0 4px;
-  line-height: 1.2;
-}
-
-/* Domaine */
-.cd-domain {
-  font-size: 0.8rem;
-  color: #555;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0 0 20px;
-}
-
-/* Infos durée / modalité */
-.cd-info-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.tarif-label {
+  font-size: 14px;
   margin-bottom: 10px;
-  flex-wrap: wrap;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
-.cd-info-item {
+.tarif-block p {
+  font-size: 36px;
+  font-weight: bold;
+  color: rgb(15, 20, 185);
+}
+
+.inscrit-btn {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background-color: rgb(0, 255, 98);
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.brochure-btn {
+  margin: 20px 10px;
+  padding: 15px 20px;
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+.hero-image {
+  width: 400px;
+  height: 400px;
+}
+
+.details {
+  padding: 40px;
   display: flex;
   align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
-  color: #333;
+  justify-content: space-between;
+  gap: 40px;
+  height: auto;
 }
 
-.cd-info-icon {
-  font-size: 0.9rem;
-  color: #555;
+.objectives {
+  width: 50%;
+  height: 300px;
+  background-color: rgb(238, 9, 204);
+  border-radius: 50px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-.cd-info-label {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #111;
+.programme {
+  width: 50%;
+  background-color: rgb(9, 238, 135);
+  height: 300px;
+  border-radius: 50px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-.cd-info-value {
-  color: #444;
-}
-
-.cd-separator {
-  color: #ccc;
-  font-size: 1rem;
-}
-
-/* Places */
-.cd-places {
-  font-size: 0.85rem;
-  color: #444;
-  margin: 8px 0 20px;
-}
-
-/* Tarif */
-.cd-tarif-block {
+.details h2 {
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
-.cd-tarif-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #111;
-  margin: 0 0 4px;
+.details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 18px;
 }
 
-.cd-tarif-price {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #c0392b;
-  margin: 0;
-}
-
-/* Bouton S'inscrire */
-.cd-inscrit-btn {
-  background: #c0392b;
-  color: #fff;
-  border: none;
-  padding: 10px 24px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: background 0.2s;
-}
-
-.cd-inscrit-btn:hover {
-  background: #a93226;
-}
-
-/* ===== IMAGE DROITE ===== */
-.cd-hero-right {
-  flex-shrink: 0;
-  width: 260px;
-}
-
-.cd-hero-image {
-  width: 100%;
-  height: 180px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.cd-hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Placeholder paysage si pas d'image */
-.cd-hero-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.cd-placeholder-sky {
-  flex: 1;
-  background: linear-gradient(180deg, #87ceeb 0%, #b0dff0 100%);
-}
-
-.cd-placeholder-ground {
-  height: 45%;
-  background: linear-gradient(180deg, #5aad4a 0%, #3d8b35 100%);
-  border-radius: 60% 60% 0 0 / 30% 30% 0 0;
-}
-
-/* ===== DIVIDER ===== */
-.cd-divider {
-  border: none;
-  border-top: 1px solid #e0e0e0;
-  margin: 36px 0;
-}
-
-/* ===== DETAILS ===== */
-.cd-details {
-  max-width: 680px;
-}
-
-.cd-details-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  color: #c0392b;
-  margin: 0 0 14px;
-}
-
-.cd-details-text {
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: #333;
-  margin: 0 0 24px;
-}
-
-/* Certificat */
-.cd-certificat {
-  font-size: 0.9rem;
-  color: #c0392b;
-  font-weight: 600;
-  margin: 0 0 24px;
-  text-decoration: underline;
-  cursor: default;
-}
-
-/* Bouton brochure */
-.cd-brochure-btn {
-  background: #c0392b;
-  color: #fff;
-  border: none;
-  padding: 10px 24px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: background 0.2s;
-}
-
-.cd-brochure-btn:hover {
-  background: #a93226;
-}
-
-/* ===== NOT FOUND ===== */
-.cd-notfound {
+.instructor {
+  padding: 40px;
   text-align: center;
-  padding: 80px 24px;
+  align-items: center;
+  gap: 40px;
 }
 
-.cd-notfound button {
-  margin-top: 16px;
-  background: #c0392b;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.95rem;
+.instructor h6 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: normal;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 640px) {
-  .cd-hero {
-    flex-direction: column-reverse;
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
   }
 
-  .cd-hero-right {
-    width: 100%;
+  .header-text {
+      max-width: none;
+      text-align: center;
   }
 
-  .cd-hero-image {
-    height: 160px;
+  .info-row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hero-image {
+      width: 300px;
+      height: 300px;
+  }
+
+  .details {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
+      gap: 10px;
+  }
+
+  .objectives, .programme {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+  }
+
+  .details h2 {
+      font-size: 28px;
+  }
+
+  .instructor {
+      flex-direction: column;
+      padding: 20px;
+      height: auto;
   }
 }
