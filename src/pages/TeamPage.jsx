@@ -5,6 +5,8 @@ import Footer from '../components/Footer'
 import Team from '../components/Team'
 import './styles/teampage.css';
 import Founder from './assets/dom.png';
+import Mouna from './assets/M.png';
+import B from './assets/B.png';
 
 function TeamPage() {
   return (
