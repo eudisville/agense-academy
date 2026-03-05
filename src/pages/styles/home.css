@@ -373,6 +373,10 @@ span {
     header {
         height: 86vh;
     }
+    
+    .header-content h1 {
+        font-size: 36px;
+    }
 
     .about {
         flex-direction: column;
@@ -396,6 +400,12 @@ span {
     .about .image {
         width: 100%;
         margin-top: 20px;
+        text-align: center;
+    }
+
+    .image img {
+        width:350px;
+        margin-top: 40px;
     }
 
     .formations {
