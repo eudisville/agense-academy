@@ -5,6 +5,7 @@ import CoursesCard from '../components/CoursesCard'
 import './styles/courses.css';
 import Footer from '../components/Footer';
 import coursesData from '../data/coursesData';
+import Stud from './assets/stud.jpg';
 
 function Courses() {
   return (
@@ -29,6 +30,23 @@ function Courses() {
           ))}
         </div>
       </div>
+
+      <section className='box'>
+        <div className="box-image">
+          <img src={Stud} alt="" />
+        </div>
+
+        <div className="formulaire">
+          <h1><span>Hello</span>, inscrivez-vous à notre newsletter</h1>
+          <p>Recevez nos dernières actualités et nos offres exclusives directement dans votre boîte de réception.</p>
+
+          <form action="">
+            <input type="text" placeholder='Votre nom' />
+            <input type="email" placeholder='Votre adresse email' />
+            <button type='submit'>S'inscire</button>
+          </form>
+        </div>
+      </section>
 
       <Footer />
     </div>

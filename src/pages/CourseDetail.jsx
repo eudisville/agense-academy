@@ -5,6 +5,9 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import coursesData from '../data/coursesData';
 import './styles/courseDetail.css';
+import Beriverse from './assets/beriverse.png';
+import Jera from './assets/jera.png';
+import Impact from './assets/impact.jpeg';
 
 function CourseDetail() {
   const { id } = useParams();
@@ -105,6 +108,22 @@ function CourseDetail() {
         {/* <h2>Formateur</h2> */}
         <h6><strong>{course.instructor}</strong></h6>
         <p>{course.instructorRole}</p>
+      </div>
+
+      <div className="partnerships">
+        <div className="items">
+
+          <div className="partnership-text">
+            <h1>Nos Partenaires</h1>
+            <p>Nous collaborons avec les entreprises expertes dans leurs domaines.</p>
+          </div>
+          <div className="partners">
+            <img src={Beriverse} alt="" />
+            <img src={Jera} alt="" />
+            <img src={Impact} alt="" />
+          </div>
+
+        </div>
       </div>
 
       <Footer />

@@ -2,8 +2,50 @@
 .team-cards {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
+}
+
+.join {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('../assets/join.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    color: white;
+}
+
+.join-text {
+    width: 60%;
+}
+
+.join-text h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.join-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.join-text button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: rgb(11, 34, 137);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.join-text button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 767px) {

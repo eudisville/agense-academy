@@ -4,7 +4,7 @@ import Nav from '../components/Nav';
 import Card from '../components/Card';
 import './styles/home.css';
 import img1 from './assets/AgenSe.png';
-import Founder from './assets/founder.png';
+import Founder from './assets/dom.png';
 import ClientCard from '../components/ClientCard';
 import Footer from '../components/Footer';
 import IA from './assets/ia.jpg';
@@ -14,6 +14,9 @@ import Entre from './assets/business.jpg';
 import Lead from './assets/leader.jpg';
 import Stud from './assets/stud.jpg';
 import Academy from './assets/BA.jpg';
+import Beriverse from './assets/beriverse.png';
+import Jera from './assets/jera.png';
+import Impact from './assets/impact.jpeg';
 
 function Home() {
   const slides = [
@@ -145,6 +148,22 @@ function Home() {
 
         </div>
       </section>
+
+      <div className="partnerships">
+        <div className="items">
+
+          <div className="partnership-text">
+            <h1>Nos Partenaires</h1>
+            <p>Nous sommes fiers de collaborer avec des partenaires qui partagent notre vision et notre engagement envers l’éducation et le développement des jeunes talents.</p>
+          </div>
+          <div className="partners">
+            <img src={Beriverse} alt="" />
+            <img src={Jera} alt="" />
+            <img src={Impact} alt="" />
+          </div>
+
+        </div>
+      </div>
       
       <section className='temoignages'>
         <div className="title">

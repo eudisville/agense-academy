@@ -1,9 +1,14 @@
+import image1 from '../public_assets/ai.jpg'
+import image2 from '../public_assets/ges.jpg'
+import image3 from '../public_assets/ship.jpg'
+import image4 from '../public_assets/side.jpg'
+
 const coursesData = [
   {
     id: "bootcamp",
     title: "Bootcamp",
     content: "Formation intensive pour acquérir rapidement les compétences essentielles dans un domaine particulier.",
-    backgroundImage: "ai.jpg",
+    backgroundImage: image1,
     backgroundColor: "#000000",
     badge: "Intensif",
     duration: "3 mois",
@@ -30,7 +35,7 @@ const coursesData = [
     id: "gestion-projet",
     title: "Introduction à la Gestion de Projet",
     content: "Apprendre à gérer efficacement des projets complexes dans un environnement professionnel.",
-    backgroundImage: "ges.jpg",
+    backgroundImage: image2,
     backgroundColor: "#000000",
     badge: "Professionnel",
     duration: "6 semaines",
@@ -59,7 +64,7 @@ const coursesData = [
     id: "leadership",
     title: "Leadership",
     content: "Développer les compétences nécessaires pour motiver et guider une équipe vers la réussite.",
-    backgroundImage: "ship.jpg",
+    backgroundImage: image3,
     backgroundColor: "#000000",
     badge: "Management",
     duration: "4 semaines",
@@ -84,9 +89,9 @@ const coursesData = [
   },
   {
     id: "intelligence-artificielle",
-    title: "Introduction à l'Intelligence Artificielle",
+    title: "Iinitiation à l'Intelligence Artificielle",
     content: "Apprendre à s'exprimer clairement, à convaincre et à interagir efficacement dans tous les contextes.",
-    backgroundImage: "ai.jpg",
+    backgroundImage: image4,
     backgroundColor: "#000000",
     badge: "Tech",
     duration: "8 semaines",
@@ -96,8 +101,8 @@ const coursesData = [
     description: `L'Intelligence Artificielle redéfinit tous les secteurs d'activité. Cette initiation vous permet de comprendre les mécanismes fondamentaux de l'IA, d'explorer ses applications concrètes dans le monde professionnel africain, et de commencer à utiliser des outils IA dans votre quotidien.`,
     objectives: [
       "Comprendre ce qu'est l'IA, le Machine Learning et le Deep Learning",
-      "Explorer les cas d'usage concrets en Afrique (agriculture, finance, santé…)",
-      "Utiliser des outils IA accessibles sans coder (ChatGPT, Copilot, Midjourney…)",
+      "Explorer les cas d'usage concrets dans divers secteurs",
+      "Utiliser des outils IA accessibles sans coder",
       "Anticiper les impacts de l'IA sur les métiers et s'y préparer",
     ],
     programme: [

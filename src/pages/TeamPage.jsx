@@ -4,9 +4,9 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import Team from '../components/Team'
 import './styles/teampage.css';
-import Founder from './assets/founder.png';
-import Mouna from './assets/Mouna.png';
-import Bole from './assets/Bole.png';
+import Founder from './assets/dom.png';
+import Mouna from './assets/mouna.png';
+import Bole from './assets/bole.png';
 
 function TeamPage() {
   return (
@@ -24,6 +24,16 @@ function TeamPage() {
             <Team image={Bole} name="Junior Bole" role="Chargé des Opérations et Logistique" />
           </div>
           
+        </div>
+      </section>
+
+      <section className='join'>
+        <div className="join-text">
+          <h1>Rejoignez notre équipe</h1>
+          <p>Vous êtes passionné par l'éducation et le développement des jeunes talents ? 
+           <br />Nous sommes toujours à la recherche de personnes motivées pour rejoindre notre équipe. 
+          </p>
+          <button>Nous contacter</button>
         </div>
       </section>
 
