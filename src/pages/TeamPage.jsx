@@ -5,8 +5,8 @@ import Footer from '../components/Footer'
 import Team from '../components/Team'
 import './styles/teampage.css';
 import Founder from './assets/dom.png';
-import Mouna from './assets/M.png';
-import B from './assets/B.png';
+import Mouna from './assets/hello.png';
+import B from './assets/steve.png';
 
 function TeamPage() {
   return (
@@ -20,8 +20,8 @@ function TeamPage() {
 
           <div className="team-cards">
             <Team image={Founder} name="Marie Dominique BEUGRE" role="Executive Manager" />
-            <Team image="" name="Mouna Yeboue" role="Responsable pédagogique et Projets" />
-            <Team image="" name="Junior Bole" role="Chargé des Opérations et Logistique" />
+            <Team image={Mouna} name="Mouna Yeboue" role="Responsable pédagogique et Projets" />
+            <Team image={B} name="Junior Bole" role="Chargé des Opérations et Logistique" />
           </div>
           
         </div>
