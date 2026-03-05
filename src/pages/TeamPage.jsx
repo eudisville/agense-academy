@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Team from '../components/Team'
 import './styles/teampage.css';
 import Founder from './assets/dom.png';
-import Mouna from './assets/mouna.png';
+import Mouna from './assets/Mouna.png';
 import Bole from './assets/bole.png';
 
 function TeamPage() {
