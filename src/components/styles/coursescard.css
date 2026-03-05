@@ -1,6 +1,6 @@
-.card {
+.card-course {
   position: relative;
-  width: 600px;
+  width: 300px;
   height: 450px;
   overflow: hidden;
   box-shadow: none; /* Supprime toute ombre interne */
@@ -36,7 +36,7 @@
 
 .card-content h2 {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .card-content p {

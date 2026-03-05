@@ -6,7 +6,7 @@ import image4 from '../public_assets/side.jpg'
 const coursesData = [
   {
     id: "bootcamp",
-    title: "Bootcamp",
+    title: "Stratégie et management des projets audiovisuels",
     content: "Formation intensive pour acquérir rapidement les compétences essentielles dans un domaine particulier.",
     backgroundImage: image1,
     backgroundColor: "#000000",
@@ -62,7 +62,7 @@ const coursesData = [
   },
   {
     id: "leadership",
-    title: "Leadership",
+    title: "Fondamentaux du Leadership et du Management Personnel",
     content: "Développer les compétences nécessaires pour motiver et guider une équipe vers la réussite.",
     backgroundImage: image3,
     backgroundColor: "#000000",

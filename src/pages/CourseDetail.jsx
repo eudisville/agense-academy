@@ -60,7 +60,7 @@ function CourseDetail() {
             <p className="price">{course.price}</p>
           </div>
 
-          <button className="inscrit-btn">Discuter</button>
+          <button className="inscrit-btn">S'inscrire</button>
           <button className="brochure-btn">Télécharger la brochure</button>
         </div>
 

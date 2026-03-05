@@ -5,11 +5,12 @@ import Card from '../components/Card';
 import './styles/home.css';
 import img1 from './assets/AgenSe.png';
 import Founder from './assets/dom.png';
+import T1 from './assets/djedje.jpg';
 import ClientCard from '../components/ClientCard';
 import Footer from '../components/Footer';
 import IA from './assets/ia.jpg';
-import Com from './assets/com.jpg';
-import Edu from './assets/projet.jpg';
+import Com from './assets/foc.jpg';
+import Edu from './assets/peo.jpg';
 import Entre from './assets/business.jpg';
 import Lead from './assets/leader.jpg';
 import Stud from './assets/stud.jpg';
@@ -17,23 +18,24 @@ import Academy from './assets/BA.jpg';
 import Beriverse from './assets/beriverse.png';
 import Jera from './assets/jera.png';
 import Impact from './assets/impact.jpeg';
+import Jo from './assets/ff.jpeg'
 
 function Home() {
   const slides = [
     {
       image: Academy,
       title: "Bienvenue à l'Agense Academy",
-      subtitle: "Nous créons des expériences digitales puissantes",
+      subtitle: "Site officiel de l'Agense Academy. Centre de formation basé à Abidjan",
     },
     {
       image: Com,
-      title: "Innovation & Vision",
-      subtitle: "Construisons le futur ensemble",
+      title: "Excellence. Innovation. Imapct. Collaboration",
+      subtitle: "les fondements d’Agense Academy pour former des talents d’exception et construire ensemble un avenir durable.",
     },
     {
       image: Edu,
-      title: "Performance & Impact",
-      subtitle: "Des solutions pensées pour durer",
+      title: "L’éducation repensée",
+      subtitle: "Nous combinons pédagogie moderne, technologies émergentes et approche pratique pour préparer nos apprenants aux défis réels.",
     }
   ];
 
@@ -102,9 +104,12 @@ function Home() {
             <br />Reposant sur le principe de jeunes qui forment des jeunes, nos formations sont animées par des formateurs jeunes, expérimentés et engagés, capables de comprendre les réalités et les ambitions de leur génération. 
             <br />Inspirée de modèles internationaux alliant pratique, créativité et leadership, L’Agense Academy mise sur des apprentissages concrets, interactifs et orientés vers l’action, guidés par les valeurs d’excellence, d’innovation, d’engagement et d’impact, afin de développer des compétences utiles et applicables, créer un réseau de talents connectés et accompagner les jeunes dans la construction de l’avenir qu’ils méritent.</p>
 
+          <a href="/brochure.pdf" download>
           <h4>
             Télécharger la brochure
           </h4>
+          </a>
+          
         </div>
 
         <div className="image">
@@ -172,9 +177,9 @@ function Home() {
         </div>
 
         <div className="clients">
-          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="Eudes Koffi" role="Executive Manager à Beriverse Inc." />
-          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="⁠Esther B. Tegnet" role="Partenaire - Jera Consulting Services" />
-          <ClientCard image={Founder} description="Marie Dominique BEUGRE est une jeune entrepreneur passionnée par l'éducation et le développement des jeunes talents. Elle a fondé l'Agense Academy avec l'objectif de former les jeunes à devenir des leaders capables de transformer leur environnement." name="⁠Steven Awuku" role="Formateur" />
+          <ClientCard image={Founder} description="En tant que partenaire, l'Agense c'est du professionnalisme pure. Je vous les recommande vivement !" name="Eudes Koffi" role="Executive Manager à Beriverse Inc." />
+          <ClientCard image={T1} description="Transformer et révéler une génération de leaders, telle est notre mission.Agense Academy vous accompagne pour développer les compétences qui feront de vous les leaders dont le monde a besoin. Inscrivez-vous et commencez votre transformation.." name="Christian Emmanuel Djedje" role="PCA Wake Up Côte d’Ivoire," />
+          <ClientCard image={Jo} description="Je rejoins ce programme avec la conviction que la formation et l’accompagnement des jeunes sont des leviers essentiels pour leur développement personnel et professionnel. Mon rôle sera d’accompagner les participants tout au long de leur parcours, en rendant l’apprentissage accessible, interactif et progressif." name="Jonathan KOFFI" role="Formateur" />
         </div>
       </section>
 

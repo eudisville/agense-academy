@@ -6,7 +6,7 @@ const Card = ({ backgroundImage, title, content, backgroundColor, courseId }) =>
   const navigate = useNavigate();
 
   return (
-    <div className="card">
+    <div className="card-course">
       <div
         className="card-background"
         style={{

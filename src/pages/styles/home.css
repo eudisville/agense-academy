@@ -121,6 +121,10 @@ section {
     cursor: pointer;
 }
 
+.about .text a {
+    text-decoration: none;
+}
+
 .about .image {
     width: 40%;
 }
@@ -165,7 +169,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -523,5 +527,29 @@ span {
 
     .formulaire button {
         font-size: 14px;
+    }
+
+    .partnerships {
+        flex-direction: column;
+        padding: 40px;
+        height: auto;
+    }
+
+    .partnership-text h1 {
+        font-size: 40px;
+    }
+
+    .partnership-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .partners {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .partners img {
+        width: 200px;
     }
 }
