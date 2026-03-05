@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react' 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import TopBar from '../components/TopBar';
 import Nav from '../components/Nav';
 import Card from '../components/Card';
@@ -19,8 +21,16 @@ import Beriverse from './assets/beriverse.png';
 import Jera from './assets/jera.png';
 import Impact from './assets/impact.jpeg';
 import Jo from './assets/ff.jpeg'
+import Wake from './assets/wake.jpeg'
 
 function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Optionnel: durée de l'animation en ms
+      once: true, // Optionnel: animer une seule fois au premier défilement
+    });
+  }, []);
+
   const slides = [
     {
       image: Academy,
@@ -72,7 +82,7 @@ function Home() {
         backgroundImage: `url(${slides[current].image})`
       }}
     >
-      <div className="header-content">
+      <div className="header-content" data-aos="fade-up">
         <h1>{slides[current].title}</h1>
         <p>{slides[current].subtitle}</p>
       </div>
@@ -98,7 +108,7 @@ function Home() {
     </header>
 
       <section className='about'>
-        <div className="text">
+        <div className="text" data-aos="fade-up">
           <h1>A Propos de <br />l'Agense Academy</h1>
           <p>L’Agense Academy est née de la conviction que le véritable changement commence par la formation et s’adresse principalement aux jeunes lycéens, étudiants, jeunes professionnels, porteurs de projets et entrepreneurs, pour les préparer à devenir compétents, confiants et conscients de leur potentiel. 
             <br />Reposant sur le principe de jeunes qui forment des jeunes, nos formations sont animées par des formateurs jeunes, expérimentés et engagés, capables de comprendre les réalités et les ambitions de leur génération. 
@@ -112,13 +122,13 @@ function Home() {
           
         </div>
 
-        <div className="image">
+        <div className="image" data-aos="fade-up">
           <img src={img1} alt="" />
         </div>
       </section>
 
       <section className='formations'>
-        <div className="formation-text">
+        <div className="formation-text" data-aos="fade-up">
           <div className="formation-top">
             <h1>Les Domaines de Formations</h1>
             <a href="/courses">Nos Formations</a>
@@ -127,7 +137,7 @@ function Home() {
           <p>L’Agense Academy propose cinq domaines de formation clés, pensés pour être transversaux et complémentaires. Chaque programme est conçu pour développer des compétences essentielles dans des secteurs variés: communication, leadership, entrepreneuriat, gestion de projet, éducation financière et culture digitale afin que les jeunes puissent appliquer leurs apprentissages de manière concrète et globale, quel que soit leur parcours ou leur projet.</p>
         </div>
 
-        <div className="cards">
+        <div className="cards" data-aos="fade-up">
           <Card backgroundImage={Com} title="Communication & Expression" content="Apprendre à s’exprimer clairement, à convaincre et à interagir efficacement dans tous les contextes, personnels ou professionnels." />
           <Card backgroundImage={Lead} title="Leadership & Développement personnel" content="Développer la confiance en soi, la prise d’initiative et les compétences pour guider et inspirer les autres." />
           <Card backgroundImage={Entre} title="Gestion de Projets & Entrepreneuriat" content="Apprendre à planifier, organiser et mener à bien des projets innovants, tout en développant un esprit entrepreneurial." />
@@ -136,7 +146,7 @@ function Home() {
         </div>
       </section>
       
-      <section className='founder'>
+      <section className='founder' data-aos="fade-down">
         <div className="founder-image">
           <div className="image-container">
             <img src={Founder} alt="" />
@@ -148,13 +158,13 @@ function Home() {
 
           <div className="role">
             <h3>Marie Dominique BEUGRE</h3>
-            <h6>Fondateur de l'Agense Academy</h6>
+            <h6>Fondatrice & Executive Manager de l'Agense Academy</h6>
           </div>
 
         </div>
       </section>
 
-      <div className="partnerships">
+      <div className="partnerships" data-aos="fade-down">
         <div className="items">
 
           <div className="partnership-text">
@@ -165,6 +175,7 @@ function Home() {
             <img src={Beriverse} alt="" />
             <img src={Jera} alt="" />
             <img src={Impact} alt="" />
+            <img src={Wake} alt="" />
           </div>
 
         </div>
@@ -176,7 +187,7 @@ function Home() {
           <p>Ajouter des lignes dans le corps du texte</p>
         </div>
 
-        <div className="clients">
+        <div className="clients" data-aos="fade-up-left">
           <ClientCard image={Founder} description="En tant que partenaire, l'Agense c'est du professionnalisme pure. Je vous les recommande vivement !" name="Eudes Koffi" role="Executive Manager à Beriverse Inc." />
           <ClientCard image={T1} description="Transformer et révéler une génération de leaders, telle est notre mission.Agense Academy vous accompagne pour développer les compétences qui feront de vous les leaders dont le monde a besoin. Inscrivez-vous et commencez votre transformation.." name="Christian Emmanuel Djedje" role="PCA Wake Up Côte d’Ivoire," />
           <ClientCard image={Jo} description="Je rejoins ce programme avec la conviction que la formation et l’accompagnement des jeunes sont des leviers essentiels pour leur développement personnel et professionnel. Mon rôle sera d’accompagner les participants tout au long de leur parcours, en rendant l’apprentissage accessible, interactif et progressif." name="Jonathan KOFFI" role="Formateur" />
@@ -188,7 +199,7 @@ function Home() {
           <img src={Stud} alt="" />
         </div>
 
-        <div className="formulaire">
+        <div className="formulaire" data-aos="fade-up-left">
           <h1><span>Hello</span>, inscrivez-vous à notre newsletter</h1>
           <p>Recevez nos dernières actualités et nos offres exclusives directement dans votre boîte de réception.</p>
 

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import { useParams, useNavigate } from 'react-router-dom';
 import TopBar from '../components/TopBar';
 import Nav from '../components/Nav';
@@ -13,6 +15,13 @@ function CourseDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const course = coursesData.find((c) => c.id === id);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Optionnel: durée de l'animation en ms
+      once: true, // Optionnel: animer une seule fois au premier défilement
+    });
+  }, []);
 
   if (!course) {
     return (
@@ -34,7 +43,7 @@ function CourseDetail() {
       <Nav />
 
       <div className="header">
-        <div className="header-text">
+        <div className="header-text" data-aos="fade-up">
           <h1>{course.title}</h1>
           <h5>{course.badge}</h5>
 
@@ -53,7 +62,7 @@ function CourseDetail() {
             </span>
           </div>
 
-          <p className="places">25 Places disponibles/cohorte</p>
+          <p className="places">{course.students} Places disponibles</p>
 
           <div className="tarif-block">
             {/* <p>TARIF</p> */}
@@ -69,7 +78,7 @@ function CourseDetail() {
 
         <div className="header-text">
           <div
-            className="hero-image"
+            className="hero-image" data-aos="fade-down-left"
             style={{ backgroundImage: `url(${course.backgroundImage})` }}
             >
              {course.backgroundImage ? (
@@ -86,7 +95,7 @@ function CourseDetail() {
       </div>
 
       <section className='details'>
-        <div className="objectives">
+        <div className="objectives" data-aos="flip-right">
           <h2>Objectifs de la formation</h2>
           <ul>
             {course.objectives.map((obj, index) => (
@@ -95,7 +104,7 @@ function CourseDetail() {
           </ul>
         </div>
 
-        <div className="programme">
+        <div className="programme" data-aos="flip-right">
           <h2>Programme de la formation</h2>
           <ul>
             {course.programme.map((item, index) => (
@@ -114,7 +123,7 @@ function CourseDetail() {
       </div>
 
       <div className="date">
-        <div className="date-items">
+        <div className="date-items" data-aos="zoom-in">
           <div className="date-title">
             <h1>Date des Prochaines sessions</h1>
             <p>Retrouvez les dates de nos prochaines sessions et réservez votre place avant qu'elles ne soient complètes.</p>
@@ -130,7 +139,7 @@ function CourseDetail() {
         </div>
       </div>
 
-      <div className="partnerships">
+      <div className="partnerships" data-aos="zoom-in">
         <div className="items">
 
           <div className="partnership-text">

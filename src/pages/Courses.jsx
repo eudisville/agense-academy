@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import TopBar from '../components/TopBar'
 import Nav from '../components/Nav'
 import CoursesCard from '../components/CoursesCard'
@@ -8,12 +10,19 @@ import coursesData from '../data/coursesData';
 import Stud from './assets/stud.jpg';
 
 function Courses() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, // Optionnel: durée de l'animation en ms
+      once: true, // Optionnel: animer une seule fois au premier défilement
+    });
+  }, []);
+
   return (
     <div>
       <TopBar />
       <Nav />
 
-      <div className="courses-container">
+      <div className="courses-container" data-aos="zoom-in">
         <h1>Formations</h1>
         <p>Découvrez nos formations conçues pour vous aider à développer vos compétences et à atteindre vos objectifs professionnels. Que vous soyez débutant ou que vous cherchiez à approfondir vos connaissances, nous avons une formation adaptée à vos besoins.</p>
 
@@ -31,7 +40,7 @@ function Courses() {
         </div>
       </div>
 
-      <section className='box'>
+      <section className='box' data-aos="zoom-out-down">
         <div className="box-image">
           <img src={Stud} alt="" />
         </div>
