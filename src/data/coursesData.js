@@ -2,11 +2,12 @@ import image1 from '../public_assets/ai.jpg'
 import image2 from '../public_assets/ges.jpg'
 import image3 from '../public_assets/ship.jpg'
 import image4 from '../public_assets/side.jpg'
+import IA from '../public_assets/ia-brochure.pdf'
 
 const coursesData = [
   {
     id: "bootcamp",
-    title: "Stratégie et management des projets audiovisuels",
+    title: "Stratégie et Management Projets audiovisuels",
     content: "Formation intensive pour acquérir rapidement les compétences essentielles dans un domaine particulier.",
     backgroundImage: image1,
     backgroundColor: "#000000",
@@ -57,17 +58,18 @@ const coursesData = [
       { semaine: "Semaine 5 ", contenu: "Suivi, contrôle et outils collaboratifs" },
       { semaine: "Semaine 6 ", contenu: "Clôture de projet et retour d'expérience" },
     ],
-    instructor: "Mme. Adjoua Bamba",
-    instructorRole: "PMP certifiée, Chef de projets senior chez Orange CI",
+    instructor: "Jonathan KOFFI",
+    instructorRole: "Instructeur",
   },
   {
     id: "leadership",
-    title: "Fondamentaux du Leadership et du Management Personnel",
+    title: "Leadership et Management Personnel",
     content: "Développer les compétences nécessaires pour motiver et guider une équipe vers la réussite.",
     backgroundImage: image3,
     backgroundColor: "#000000",
-    badge: "Management",
+    badge: "Bootcamp",
     duration: "4 semaines",
+    date: "XX.XX.XX",
     level: "Intermédiaire",
     students: "60+",
     price: "200 000 FCFA",
@@ -92,9 +94,11 @@ const coursesData = [
     title: "Iinitiation à l'Intelligence Artificielle",
     content: "Apprendre à s'exprimer clairement, à convaincre et à interagir efficacement dans tous les contextes.",
     backgroundImage: image4,
+    brochure : IA,
     backgroundColor: "#000000",
-    badge: "Tech",
-    duration: "8 semaines",
+    badge: "Cohorte",
+    duration: "1 Mois",
+    date: "18.05.2026",
     level: "Débutant",
     students: "200+",
     price: "120 000 FCFA",

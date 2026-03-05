@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import TopBar from '../components/TopBar'
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -33,7 +34,11 @@ function TeamPage() {
           <p>Vous êtes passionné par l'éducation et le développement des jeunes talents ? 
            <br />Nous sommes toujours à la recherche de personnes motivées pour rejoindre notre équipe. 
           </p>
-          <button>Nous contacter</button>
+
+          <Link to="mailto:agense.academy@gmail.com" target='_blank'>
+            <button>Nous contacter</button>
+          </Link>
+          
         </div>
       </section>
 

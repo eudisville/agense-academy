@@ -27,7 +27,12 @@
 .description-card {
   font-size: 14px;
   color: #333;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.card-client p {
+  
 }
 
 .name {

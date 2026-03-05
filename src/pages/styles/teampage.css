@@ -56,4 +56,21 @@
         gap: 20px;
         justify-content: center;
     }
+
+    .join {
+        height: 100vh;
+    }
+
+    .join-text {
+        width: 100%;
+    }
+
+    .join-text h1 {
+        font-size: 36px;
+    }
+
+    .join-text p {
+        font-size: 14px;
+        text-align: left;
+    }
 }

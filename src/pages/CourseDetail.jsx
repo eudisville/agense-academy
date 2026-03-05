@@ -61,7 +61,10 @@ function CourseDetail() {
           </div>
 
           <button className="inscrit-btn">S'inscrire</button>
-          <button className="brochure-btn">Télécharger la brochure</button>
+
+          <a href={course.brochure} download={`brochure-${course.id}.pdf`}>
+            <button className="brochure-btn">Télécharger la brochure</button>
+          </a>
         </div>
 
         <div className="header-text">
@@ -108,6 +111,23 @@ function CourseDetail() {
         {/* <h2>Formateur</h2> */}
         <h6><strong>{course.instructor}</strong></h6>
         <p>{course.instructorRole}</p>
+      </div>
+
+      <div className="date">
+        <div className="date-items">
+          <div className="date-title">
+            <h1>Date des Prochaines sessions</h1>
+            <p>Retrouvez les dates de nos prochaines sessions et réservez votre place avant qu'elles ne soient complètes.</p>
+          </div>
+
+          <div className="date-box">
+            <h2>{course.date}</h2>
+
+            <a href={course.brochure} download={`brochure-${course.id}.pdf`}>
+              <button className="brochure-btn">Télécharger la brochure</button>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="partnerships">

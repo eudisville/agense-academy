@@ -10,7 +10,7 @@
 }
 
 .header-text {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .header-text h1 {
@@ -78,7 +78,7 @@
 }
 
 .hero-image {
-  width: 100%;
+  width: 400px;
   height: 500px;
   background-size: cover;
   background-position: center;
@@ -147,6 +147,33 @@
   align-items: center;
   justify-content: center;
   color: white;
+}
+
+.date {
+  background: linear-gradient(rgb(20, 27, 124), rgb(0, 132, 255));
+  color: white;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.date-title h1 {
+  font-size: 40px;
+}
+
+.date-title p {
+  font-size: 16px;
+}
+
+.date-box {
+  margin-top: 40px;
+}
+
+.date-box h2 {
+  font-size: 60px;
 }
 
 .details h2 {
@@ -230,5 +257,18 @@
 
   .instructor p {
       font-size: 14px;
+  }
+
+  .date {
+    height: 100vh;
+  }
+
+  .date-title h1{
+    font-size: 36px;
+  }
+
+  .date-title p {
+    font-size: 14px;
+    margin-top: 8px;
   }
 }

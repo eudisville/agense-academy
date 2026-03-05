@@ -375,7 +375,8 @@ span {
 
 @media screen and (max-width: 767px) {
     header {
-        height: 86vh;
+        height: 88vh;
+        padding: 0 40px;
     }
     
     .header-content h1 {
@@ -399,6 +400,12 @@ span {
 
     .about .text p {
         font-size: 16px;
+        text-align: center;
+    }
+
+    .about .text h4 {
+        width: 100%;
+        text-align: center;
     }
 
     .about .image {
@@ -532,7 +539,7 @@ span {
     .partnerships {
         flex-direction: column;
         padding: 40px;
-        height: auto;
+        height: 100vh;
     }
 
     .partnership-text h1 {
