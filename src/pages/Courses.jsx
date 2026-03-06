@@ -34,7 +34,7 @@ function Courses() {
               backgroundImage={course.backgroundImage}
               backgroundColor={course.backgroundColor}
               title={course.title}
-              content={course.content}
+              // content={course.content}
             />
           ))}
         </div>

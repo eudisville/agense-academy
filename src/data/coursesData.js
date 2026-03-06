@@ -1,7 +1,7 @@
-import image1 from '../public_assets/ai.jpg'
-import image2 from '../public_assets/ges.jpg'
-import image3 from '../public_assets/ship.jpg'
-import image4 from '../public_assets/side.jpg'
+import image1 from '../public_assets/5.png'
+import image2 from '../public_assets/9.png'
+import image3 from '../public_assets/13.png'
+import image4 from '../public_assets/15.jpg'
 import IA from '../public_assets/ia-brochure.pdf'
 import Visual from '../public_assets/visuel-brochure.pdf'
 import Gp from '../public_assets/gp.pdf'
@@ -45,7 +45,7 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
     id: "gestion-projet",
     title: "Introduction à la Gestion de Projet",
     content: "Apprendre à gérer efficacement des projets complexes dans un environnement professionnel.",
-    backgroundImage: image2,
+    backgroundImage: image3,
     brochure : Gp,
     link: "https://forms.gle/ULMeoapDSqyktSYB8",
     backgroundColor: "#000000",
@@ -83,7 +83,7 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
     id: "leadership",
     title: "Leadership et Management Personnel",
     content: "Développer les compétences nécessaires pour motiver et guider une équipe vers la réussite.",
-    backgroundImage: image3,
+    backgroundImage: image2,
     brochure : Lead,
     link: "https://forms.gle/6jJvatYJG2cq6neEA",
     backgroundColor: "#000000",

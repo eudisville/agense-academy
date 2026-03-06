@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 import IA from './assets/ia.jpg';
 import Com from './assets/foc.jpg';
 import Edu from './assets/peo.jpg';
+import Financce from './assets/finance.jpg';
 import Entre from './assets/business.jpg';
 import Lead from './assets/leader.jpg';
 import Stud from './assets/stud.jpg';
@@ -111,8 +112,8 @@ function Home() {
       <section className='about'>
         <div className="text" data-aos="fade-up">
           <h1>A Propos de <br />l'Agense Academy</h1>
-          <p>L’Agense Academy est née de la conviction que le véritable changement commence par la formation et s’adresse principalement aux jeunes lycéens, étudiants, jeunes professionnels, porteurs de projets et entrepreneurs, pour les préparer à devenir compétents, confiants et conscients de leur potentiel. 
-            <br />Reposant sur le principe de jeunes qui forment des jeunes, nos formations sont animées par des formateurs jeunes, expérimentés et engagés, capables de comprendre les réalités et les ambitions de leur génération. 
+          <p>L’Agense Academy est née de la conviction que le véritable changement commence par la formation et s’adresse principalement aux jeunes lycéens, étudiants, jeunes professionnels, porteurs de projets et entrepreneurs, pour les préparer à devenir compétents, confiants et conscients de leur potentiel. <br />
+            <br />Reposant sur le principe de jeunes qui forment des jeunes, nos formations sont animées par des formateurs jeunes, expérimentés et engagés, capables de comprendre les réalités et les ambitions de leur génération. <br />
             <br />Inspirée de modèles internationaux alliant pratique, créativité et leadership, L’Agense Academy mise sur des apprentissages concrets, interactifs et orientés vers l’action, guidés par les valeurs d’excellence, d’innovation, d’engagement et d’impact, afin de développer des compétences utiles et applicables, créer un réseau de talents connectés et accompagner les jeunes dans la construction de l’avenir qu’ils méritent.</p>
 
           <a href="/brochure.pdf" download>
@@ -142,7 +143,7 @@ function Home() {
           <Card backgroundImage={Com} title="Communication & Expression" content="Apprendre à s’exprimer clairement, à convaincre et à interagir efficacement dans tous les contextes, personnels ou professionnels." />
           <Card backgroundImage={Lead} title="Leadership & Développement personnel" content="Développer la confiance en soi, la prise d’initiative et les compétences pour guider et inspirer les autres." />
           <Card backgroundImage={Entre} title="Gestion de Projets & Entrepreneuriat" content="Apprendre à planifier, organiser et mener à bien des projets innovants, tout en développant un esprit entrepreneurial." />
-          <Card backgroundImage={Edu} title="Éducation Financière & Culture Business" content="Comprendre les bases de la gestion financière, de l’épargne et de l’investissement pour un avenir plus sûr." />
+          <Card backgroundImage={Financce} title="Éducation Financière & Culture Business" content="Comprendre les bases de la gestion financière, de l’épargne et de l’investissement pour un avenir plus sûr." />
           <Card backgroundImage={IA} title="Digital & Initiation à l'IA" content="Maîtriser les outils numériques essentiels pour s’adapter aux évolutions rapides du monde professionnel." />
         </div>
       </section>
@@ -185,7 +186,7 @@ function Home() {
       <section className='temoignages'>
         <div className="title">
           <h1>Ils nous font confiance</h1>
-          <p>Ajouter des lignes dans le corps du texte</p>
+          <h5>Découvrez ces personnes qui ont fait l'expérience de collaborer avec nous.</h5>
         </div>
 
         <div className="clients" data-aos="fade-up-left">

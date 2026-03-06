@@ -285,9 +285,11 @@ section {
 .title h1 {
     font-size: 48px;
     color: white;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.title p {
+.title h5 {
     font-size: 18px;
     color: white;
     text-align: center;
@@ -400,7 +402,7 @@ span {
 
     .about .text p {
         font-size: 16px;
-        text-align: center;
+        text-align: justify;
     }
 
     .about .text h4 {
@@ -415,7 +417,7 @@ span {
     }
 
     .image img {
-        width:350px;
+        width:300px;
         margin-top: 40px;
     }
 
@@ -482,15 +484,21 @@ span {
         padding: 40px;
     }
 
-    .temoignages .title {
+    .temoignages {
         margin-bottom: 40px;
+    }
+
+    .title {
+        width: 100%;
+        margin-bottom: 30px;
     }
 
     .temoignages .title h1 {
         font-size: 36px;
+        width: 100%;
     }
 
-    .temoignages .title p {
+    .temoignages .title h5 {
         font-size: 16px;
     }
 
