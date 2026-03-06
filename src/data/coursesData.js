@@ -110,7 +110,7 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
     content: "Apprendre à s'exprimer clairement, à convaincre et à interagir efficacement dans tous les contextes.",
     backgroundImage: image4,
     brochure : IA,
-    link: "",
+    link: "https://forms.gle/bA1HYUGtAWazgiJp6",
     backgroundColor: "#000000",
     badge: "Cohorte",
     duration: "1 Mois",

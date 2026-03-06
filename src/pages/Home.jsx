@@ -22,6 +22,7 @@ import Jera from './assets/jera.png';
 import Impact from './assets/impact.jpeg';
 import Jo from './assets/ff.jpeg'
 import Wake from './assets/wake.jpeg'
+import Eudes from './assets/Me.jpeg'
 
 function Home() {
   useEffect(() => {
@@ -188,7 +189,7 @@ function Home() {
         </div>
 
         <div className="clients" data-aos="fade-up-left">
-          <ClientCard image={Founder} description="En tant que partenaire, l'Agense c'est du professionnalisme pure. Je vous les recommande vivement !" name="Eudes Koffi" role="Executive Manager à Beriverse Inc." />
+          <ClientCard image={Eudes} description="En tant que partenaire, l'Agense c'est du professionnalisme pure. Je vous les recommande vivement !" name="Eudes Koffi" role="Executive Manager à Beriverse Inc." />
           <ClientCard image={T1} description="Transformer et révéler une génération de leaders, telle est notre mission.Agense Academy vous accompagne pour développer les compétences qui feront de vous les leaders dont le monde a besoin. Inscrivez-vous et commencez votre transformation.." name="Christian Emmanuel Djedje" role="PCA Wake Up Côte d’Ivoire," />
           <ClientCard image={Jo} description="Je rejoins ce programme avec la conviction que la formation et l’accompagnement des jeunes sont des leviers essentiels pour leur développement personnel et professionnel. Mon rôle sera d’accompagner les participants tout au long de leur parcours, en rendant l’apprentissage accessible, interactif et progressif." name="Jonathan KOFFI" role="Formateur" />
         </div>
