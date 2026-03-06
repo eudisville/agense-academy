@@ -18,6 +18,8 @@ const coursesData = [
     backgroundColor: "#000000",
     badge: "Bootcamp",
     date: "30.04.2026",
+    place: "San-Pedro",
+    format: "En Présentiel",
     duration: "3 jours",
     level: "Tous niveaux",
     students: "30",
@@ -32,9 +34,9 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
       "Pitcher et valoriser leurs projets sur le marché",
     ],
     programme: [
-      { semaine: "Jour 1 ", contenu: "Fondamentaux et mise à niveau" },
-      { semaine: "Jour 2 ", contenu: "Approfondissement et pratique intensive" },
-      { semaine: "Jour 3 ", contenu: "Projets en équipe et cas réels" },
+      { semaine: "Jour 1 ", contenu: "Formation théorique sur la gestion et la stratégie des projets audiovisuels." },
+      { semaine: "Jour 2 ", contenu: "Ateliers pratiques, débriefing et remise des certificats." },
+      { semaine: "Jour 3 ", contenu: "Networking et activités de découverte avant le retour à Abidjan." },
     ],
     instructor: "Steven Awuku",
     instructorRole: "Réalisateur ivoirien de clips vidéo et fondateur de Awuku | Meilleur Réalisateur Vidéo aux AFRIMA (2019)",
@@ -53,7 +55,7 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
     level: "Débutant",
     format: "Hybride",
     students: "25",
-    price: "180 000 FCFA",
+    price: "120 000 FCFA",
     description: `Cette formation vous donne les outils et méthodologies pour piloter des projets de A à Z. Vous apprendrez à planifier, organiser, coordonner et contrôler toutes les phases d'un projet, quelle que soit sa taille ou son secteur d'activité.`,
     objectives: [
       "Comprendre les fondamentaux de la gestion de projets",
@@ -70,6 +72,12 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
     ],
     instructor: "Jonathan KOFFI",
     instructorRole: "Instructeur",
+
+    otherInstructor: "Marie Dominique BEUGRE",
+    otherInstructorRole: "Instructeur",
+
+    otherInstructor2: "Mouna YEBOUE",
+    otherInstructorRole2: "Instructeur",
   },
   {
     id: "leadership",
@@ -82,6 +90,7 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
     badge: "Bootcamp",
     duration: "3 jours",
     date: "26.07.2026",
+    place: "Yamoussoukro",
     level: "Intermédiaire",
     format: "En Présentiel",
     students: "30",
@@ -96,9 +105,9 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
       "Conduire des projets avec impact et performance",
     ],
     programme: [
-      { semaine: "Jour 1 ", contenu: "Connaissance de soi et styles de leadership" },
-      { semaine: "Jour 2 ", contenu: "Communication impactante et intelligence émotionnelle" },
-      { semaine: "Jour 3 ", contenu: "Motivation d'équipe, délégation et feedback" },
+      { semaine: "Jour 1 ", contenu: "Formation théorique en leadership : styles de leadership, vision stratégique, communication, prise de décision et gestion des situations complexes" },
+      { semaine: "Jour 2 ", contenu: " Ateliers pratiques & clôture : exercices de leadership, simulations, coaching personnalisé, plan d’action et remise des certificats." },
+      { semaine: "Jour 3 ", contenu: " Networking & découverte : soirée d’échanges entre participants, activité touristique et départ." },
       
     ],
     instructor: "Christian Emmanuel DJEDJE",

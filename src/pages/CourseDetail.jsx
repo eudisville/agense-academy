@@ -119,10 +119,23 @@ function CourseDetail() {
         </div>
       </section>
 
-      <div className="instructor">
+      <div className="instructors">
         {/* <h2>Formateur</h2> */}
-        <h6><strong>{course.instructor}</strong></h6>
-        <p>{course.instructorRole}</p>
+        <div className="instructor">
+          <h6><strong>{course.otherInstructor}</strong></h6>
+          <p>{course.otherInstructorRole}</p>
+        </div>
+
+        <div className="instructor">
+          <h6><strong>{course.instructor}</strong></h6>
+          <p>{course.instructorRole}</p>
+        </div>
+
+        <div className="instructor">
+          <h6><strong>{course.otherInstructor2}</strong></h6>
+          <p>{course.otherInstructorRole2}</p>
+        </div>
+
       </div>
 
       <div className="date">
@@ -134,6 +147,7 @@ function CourseDetail() {
 
           <div className="date-box">
             <h2>{course.date}</h2>
+            <h5>{course.place}</h5>
 
             <a href={course.brochure} download={`brochure-${course.id}.pdf`}>
               <button className="brochure-btn">Télécharger la brochure</button>
