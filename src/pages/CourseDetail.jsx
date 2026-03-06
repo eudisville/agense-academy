@@ -59,7 +59,7 @@ function CourseDetail() {
                 {/* <span className="separator"> | </span> */}
               <span className="info-item">
             {/* <span className="info-icon">≡ </span> */}
-            <span className="info-value">En Ligne & en Présentiel</span>
+            <span className="info-value">{course.format}</span>
             </span>
           </div>
 

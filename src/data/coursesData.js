@@ -122,6 +122,7 @@ Pendant quatre jours, les participants apprendront à penser, gérer et vendre l
     link: "https://forms.gle/bA1HYUGtAWazgiJp6",
     backgroundColor: "#000000",
     badge: "Cohorte",
+    format: "Hybride",
     duration: "1 Mois",
     date: "18.05.2026",
     level: "Débutant",

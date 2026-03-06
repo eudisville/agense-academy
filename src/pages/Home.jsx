@@ -41,7 +41,7 @@ function Home() {
     },
     {
       image: Com,
-      title: "Excellence. Innovation. Imapct. Collaboration",
+      title: "Excellence. Innovation. Imapact. Collaboration",
       subtitle: "les fondements d’Agense Academy pour former des talents d’exception et construire ensemble un avenir durable.",
     },
     {
