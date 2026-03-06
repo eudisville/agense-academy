@@ -10,6 +10,7 @@ import './styles/courseDetail.css';
 import Beriverse from './assets/beriverse.png';
 import Jera from './assets/jera.png';
 import Impact from './assets/impact.jpeg';
+import Wake from './assets/wake.jpeg'
 
 function CourseDetail() {
   const { id } = useParams();
@@ -69,7 +70,9 @@ function CourseDetail() {
             <p className="price">{course.price}</p>
           </div>
 
-          <button className="inscrit-btn">S'inscrire</button>
+          <a href={course.link} target="_blank" rel="noopener noreferrer">
+            <button className="inscrit-btn">S'inscrire</button>
+          </a>
 
           <a href={course.brochure} download={`brochure-${course.id}.pdf`}>
             <button className="brochure-btn">Télécharger la brochure</button>
@@ -150,6 +153,7 @@ function CourseDetail() {
             <img src={Beriverse} alt="" />
             <img src={Jera} alt="" />
             <img src={Impact} alt="" />
+            <img src={Wake} alt="" />
           </div>
 
         </div>
